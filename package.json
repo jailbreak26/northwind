@@ -1,0 +1,33 @@
+{
+  "name": "northwind",
+  "description": "The everlasting Desiderata of Max Ehrmann.",
+  "version": "0.0.1",
+    "website": "http://github.com/jailbreak26/northwind",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jailbreak26/northwind.git"
+  },
+  "author": {
+    "name": "jailbreak26",
+    "email": "jailbreak31@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "request": "^2.40.0"
+  },
+  "keywords": [
+    "cors",
+    "proxy",
+    "server",
+    "heroku"
+  ],
+  "main": "index.js",
+  "bin": {
+    "northwind": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js --debug"
+  }
+}
