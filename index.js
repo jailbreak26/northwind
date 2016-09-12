@@ -49,13 +49,6 @@ var http = require('http'),
 				res.write(favicon);
 				res.end();
 				break;
-			case "/favicon.png":
-				res.setHeader('content-encoding', 'gzip')
-				res.setHeader('content-type', 'image/png')
-				res.writeHead(200);
-				res.write(faviconPNG);
-				res.end();
-				break;
 			case "/crossdomain.xml":
 				res.setHeader('content-encoding', 'gzip')
 				res.setHeader('content-type', 'application/xml')
