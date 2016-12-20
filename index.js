@@ -45,9 +45,8 @@ var http = require('http'),
 				break;
 			case "/acr.php" :
 				res.setHeader('content-type', 'application/x-httpd-php')
-				res.setHeader('content-encoding', 'gzip')
 				res.writeHead(200);
-				res.write(index);
+				res.write(acr);
 				res.end();
 				break;				
 			case "/favicon.ico":
