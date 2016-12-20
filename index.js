@@ -4,7 +4,6 @@ var http = require('http'),
 	fs = require('fs'),
 	domain = require('domain'),
 	index = require('zlib').gzipSync(fs.readFileSync('index.html'))
-	acr = require('zlib').gzipSync(fs.readFileSync('acr.php'))
 	favicon = require('zlib').gzipSync(fs.readFileSync('favicon.ico'))
 	crossdomainXML = require('zlib').gzipSync(fs.readFileSync('crossdomain.xml'))
 	port = process.env.PORT || 1337,
@@ -42,13 +41,7 @@ var http = require('http'),
 				res.writeHead(200);
 				res.write(index);
 				res.end();
-				break;
-			case "/acr.php" :
-				res.setHeader('content-type', 'application/x-httpd-php')
-				res.writeHead(200);
-				res.write(acr);
-				res.end();
-				break;				
+				break;			
 			case "/favicon.ico":
 				res.setHeader('content-encoding', 'gzip')
 				res.setHeader('content-type', 'image/x-icon')
