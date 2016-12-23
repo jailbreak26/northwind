@@ -1,2 +1,1 @@
-web: node index.js
-web: php-apache2 espn,php
+web: php-apache2 index.js
