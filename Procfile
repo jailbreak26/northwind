@@ -1,1 +1,1 @@
-web: heroku-php-apache2 index.js
+web: node index.js
