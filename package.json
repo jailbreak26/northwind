@@ -27,7 +27,7 @@
     "northwind": "index.js"
   },
   "scripts": {
-    "start": "heroku-php-apache2 index.js",
-    "test": "heroku-php-apache2 index.js --debug"
+    "start": "node index.js",
+    "test": "node index.js --debug"
   }
 }
