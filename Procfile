@@ -1,1 +1,1 @@
-web: heroku-php-apache2 espn.php
+web: node index.js
