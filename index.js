@@ -41,7 +41,7 @@ var http = require('http'),
 				res.writeHead(200);
 				res.write(index);
 				res.end();
-				break;						
+				break;
 			case "/favicon.ico":
 				res.setHeader('content-encoding', 'gzip')
 				res.setHeader('content-type', 'image/x-icon')
