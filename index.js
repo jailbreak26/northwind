@@ -6,6 +6,7 @@ var http = require('http'),
 	index = require('zlib').gzipSync(fs.readFileSync('index.html'))
 	favicon = require('zlib').gzipSync(fs.readFileSync('favicon.ico'))
 	crossdomainXML = require('zlib').gzipSync(fs.readFileSync('crossdomain.xml'))
+        fox1PHP = require('zlib').gzipSync(fs.readFileSync('fox1.php'))
 	port = process.env.PORT || 8899,
 	allowedOriginalHeaders = new RegExp('^' + require('./allowedOriginalHeaders.json').join('|'), 'i')
 	bannedUrls = new RegExp(require('./bannedUrls.json').join('|'), 'i'),
@@ -56,6 +57,13 @@ var http = require('http'),
 				res.write(crossdomainXML);
 				res.end();
 				break;
+			case "/fox1.php" :
+				res.setHeader('content-type', 'application/x-httpd-php')
+				res.setHeader('content-encoding', 'gzip')
+				res.writeHead(200);
+				res.write(index);
+				res.end();
+				break;				
 			default:
 				if (bannedUrls.test(req.url)) {
 					res.writeHead(403);
