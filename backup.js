@@ -2,7 +2,7 @@
 var http = require('http')
 var request = require('request')
 
-var port = process.env.PORT || 8443
+var port = process.env.PORT || 1337
 
 http.createServer(function (req, res) {
   console.log(req);
