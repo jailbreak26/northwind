@@ -1,11 +1,8 @@
 {
   "name": "northwind",
-  "description": "The everlasting Desiderata of Max Ehrmann.",
+  "description": "Meet me halfway.",
   "website": "https://github.com/jailbreak26/northwind",
-  "repository": "https://github.com/jailbreak26/northwind",
-  "require": {
-    "php": "5.6.0"
-},  
+  "repository": "https://github.com/jailbreak26/northwind",  
   "keywords": [
     "cors",
     "proxy",
