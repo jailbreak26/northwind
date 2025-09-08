@@ -2,7 +2,7 @@
   "name": "northwind",
   "description": "Console Cloud ID",
   "version": "0.0.1",
-    "website": "http://github.com/jailbreak26/northwind",
+  "website": "http://github.com/jailbreak26/northwind",
   "repository": {
     "type": "git",
     "url": "git://github.com/jailbreak26/northwind.git"
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
-    "node-fetch": "^3.3.2"
+    "request": "^2.88.0"
   },
   "keywords": [
     "cors",
