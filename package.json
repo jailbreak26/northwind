@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
-    "request": "^2.88.0"
+    "node-fetch": "^3.3.2"
   },
   "keywords": [
     "cors",
@@ -31,7 +31,7 @@
     "test": "node index.js --debug"
   },
   "engines": {
-    "node": "22.9.0",
+    "node": ">=18.0.0",
     "npm": ">=11.0.0"
   }
 }
